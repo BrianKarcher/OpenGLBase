@@ -24,9 +24,21 @@
     <ClCompile Include="rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="solidShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sinShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="solidShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sinShader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
