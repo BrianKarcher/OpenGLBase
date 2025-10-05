@@ -30,6 +30,9 @@
     <ClCompile Include="sinShader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gradientShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rectangle.h">
@@ -39,6 +42,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="sinShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gradientShader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

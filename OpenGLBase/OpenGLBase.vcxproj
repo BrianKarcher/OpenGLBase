@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
+    <ClCompile Include="gradientShader.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="rectangle.cpp" />
     <ClCompile Include="sinShader.cpp" />
     <ClCompile Include="solidShader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="gradientShader.h" />
     <ClInclude Include="rectangle.h" />
     <ClInclude Include="sinShader.h" />
     <ClInclude Include="solidShader.h" />

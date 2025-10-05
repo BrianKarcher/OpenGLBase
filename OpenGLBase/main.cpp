@@ -4,6 +4,7 @@
 #include <iostream>
 #include "rectangle.h"
 #include "sinShader.h"
+#include "gradientShader.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
@@ -34,5 +35,5 @@ int main()
 
 	glViewport(0, 0, 800, 600);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-	sinShader(window);
+	gradientShader(window);
 }
