@@ -6,10 +6,10 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
-void gradientShader_processInput(GLFWwindow* window);
+void textureShader_processInput(GLFWwindow* window);
 
 int textureShader(GLFWwindow* window) {
-	Shader ourShader("gradientShader.vs", "gradientShader.fs");
+	Shader ourShader("textureShader.vs", "textureShader.fs");
 
 	float vertices[] = {
 		// positions          // colors           // texture coords
@@ -75,12 +75,13 @@ int textureShader(GLFWwindow* window) {
 	// Game loop
 	while (!glfwWindowShouldClose(window))
 	{
-		gradientShader_processInput(window);
+		textureShader_processInput(window);
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 		float timeValue = glfwGetTime();
 		float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
 		ourShader.use();
+		glBindTexture(GL_TEXTURE_2D, texture);
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 		//glDrawArrays(GL_TRIANGLES, 0, 3);
@@ -94,7 +95,7 @@ int textureShader(GLFWwindow* window) {
 
 }
 
-void gradientShader_processInput(GLFWwindow* window)
+void textureShader_processInput(GLFWwindow* window)
 {
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 		glfwSetWindowShouldClose(window, true);
