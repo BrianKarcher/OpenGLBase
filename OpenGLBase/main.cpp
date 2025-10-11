@@ -6,6 +6,7 @@
 #include "sinShader.h"
 #include "gradientShader.h"
 #include "texture.h"
+#include "mixTextureShader.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
@@ -36,5 +37,5 @@ int main()
 
 	glViewport(0, 0, 800, 600);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-	textureShader(window);
+	mixTextureShader(window);
 }

@@ -22,6 +22,7 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="gradientShader.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mixTexture.cpp" />
     <ClCompile Include="rectangle.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="sinShader.cpp" />
@@ -30,6 +31,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gradientShader.h" />
+    <ClInclude Include="mixTextureShader.h" />
     <ClInclude Include="rectangle.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="sinShader.h" />
@@ -47,11 +49,13 @@
     </CopyFileToFolders>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="awesomeface.png" />
     <Image Include="container.jpg">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
     </Image>
   </ItemGroup>
   <ItemGroup>
+    <None Include="mixTextureShader.fs" />
     <None Include="textureShader.fs">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
     </None>
