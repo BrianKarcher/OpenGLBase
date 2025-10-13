@@ -46,6 +46,9 @@
     <ClCompile Include="mixTexture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="texTransform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rectangle.h">
@@ -67,6 +70,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mixTextureShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texTransform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -94,6 +100,9 @@
       <Filter>Shader Files</Filter>
     </None>
     <None Include="mixTextureShader.fs">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="texTransfrom.vs">
       <Filter>Shader Files</Filter>
     </None>
   </ItemGroup>

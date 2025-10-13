@@ -27,6 +27,7 @@
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="sinShader.cpp" />
     <ClCompile Include="solidShader.cpp" />
+    <ClCompile Include="texTransform.cpp" />
     <ClCompile Include="texture.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +37,7 @@
     <ClInclude Include="shader.h" />
     <ClInclude Include="sinShader.h" />
     <ClInclude Include="solidShader.h" />
+    <ClInclude Include="texTransform.h" />
     <ClInclude Include="texture.h" />
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="mixTextureShader.fs" />
+    <None Include="texTransfrom.vs" />
     <None Include="textureShader.fs">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
     </None>
